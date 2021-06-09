@@ -6,7 +6,6 @@
 }
 
 nav {
-    background-color: rebeccapurple;
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -15,15 +14,12 @@ nav {
 }
 
 .hero {
-    background-color: indigo;
     display: flex;
-    justify-content: space-evenly;
 }
 
 .hero-intro-container {
     width: 300px;
     padding: 25px;
-    background-color:salmon;
 }
 
 .hero-form-container {
@@ -47,4 +43,48 @@ nav {
     margin-top: 8px;
     background-color: #8dc641;
     color: white;
+}
+
+.benefits-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+.benefits-item {
+    height: 150px;
+    width: 250px;
+    margin-right: 15px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Mobile screens */
+@media only screen and (max-width: 415px) {
+    .hero {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .benefits-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .benefits-item {
+        width: 80%;
+        margin-right: 0px;
+        margin-top: 15px;
+        padding: 10px;
+    }
+}
+
+/* Non mobile screens */
+@media only screen and (min-width: 416px) {
+    .hero {
+        justify-content: space-evenly;
+        padding: 20px;
+    }
 }
