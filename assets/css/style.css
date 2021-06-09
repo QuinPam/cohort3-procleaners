@@ -50,15 +50,62 @@ nav {
     justify-content: center;
 }
 
-
 .benefits-item {
     height: 150px;
     width: 250px;
     margin-right: 15px;
-    justify-content: center;
+    justify-content: space-evenly;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.testimonials-container {
+    background-color: #f3f3f3;
+    padding: 25px;
+}
+
+.testimonials-container h2 {
+    text-align: center;
+}
+
+.testimonies {
+    justify-content: center;
+    padding: 20px;
+    gap: 80px;
+    display: flex;
+}
+
+.testimony-box {
+    height: 180px;
+    width: 250px;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimony-name {
+    margin: auto;
+}
+
+.testimony-image {
+    height: 70px;
+    width: 80px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.testimony {
+    text-align: center;
+}
+
+.fas {
+    font-size: 11px;
+    color: darkgoldenrod;
+}
+
+.ratings {
+    margin: auto;
 }
 
 /* Mobile screens */
@@ -79,12 +126,22 @@ nav {
         margin-top: 15px;
         padding: 10px;
     }
+
+    .testimonies {
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
 
 /* Non mobile screens */
 @media only screen and (min-width: 416px) {
     .hero {
         justify-content: space-evenly;
+        padding: 20px;
+    }
+
+    .benefits-container {
         padding: 20px;
     }
 }
