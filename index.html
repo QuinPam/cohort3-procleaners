@@ -20,6 +20,7 @@
         <p>Phone: 1-800-222-3030</p>
     </nav>
 
+    <main>
     <!--start of hero-->
     <div class="hero">
         <div class="hero-intro-container">
@@ -30,10 +31,10 @@
         <div class="hero-form-container">
             <h3>Request Info & Booking</h3>
             <p>Fill this form and we'll contact you as soon as we can.</p>
-            <form>
-                <input type="text" placeholder="Your Name"><br>
-                <input type="email" placeholder="Your Email"><br>
-                <input type="tel" placeholder="Your Phone"><br>
+            <form action="" onsubmit="processForm()">
+                <input type="text" name="fullName" id="fullName" placeholder="Your Name"><br>
+                <input type="email" name="email" id="email" placeholder="Your Email"><br>
+                <input type="tel" name="tel" id="tel" placeholder="Your Phone"><br>
                 <button>Request Info & Booking</button>
             </form>
         </div>
@@ -52,7 +53,7 @@
             <p>We're available to serve you 7 days per week. We'll work around your schedule.</p>
         </div>
         <div class="benefits-item">
-            <i class="far fa-usd"></i>
+            <i class="fad fa-usd"></i>
             <h4>100% Money-Back Guarantee</h4>
             <p>If you're not satisfied, we'll refund all of your money. It's as simple as that.</p>
         </div>
@@ -90,11 +91,28 @@
         </div>
 
     </section>
+</main>
+
 
     <footer>
             
         <p> <i class="fas fa-heart"></i> Pamela Odeh &#169 Copyright. All Rights Reserved.</p>
         
     </footer>
+
+    <script>
+        function processForm(){
+
+            fullName = document.getElementById('fullName').value
+            email = document.getElementById('email').value
+            tel = document.getElementById('tel').value
+
+
+            alert("FullName: "+ fullName + "\n" + "Email: "+ email + "\n" + "Phone: "+ tel)
+
+
+        }
+       
+    </script>
 </body>
 </html>

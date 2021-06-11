@@ -68,6 +68,10 @@ nav {
     align-items: center;
 }
 
+.benefits-container i{
+    size:30px;
+}
+
 .testimonials-container {
     background-color: #f3f3f3;
     padding: 25px;
