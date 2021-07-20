@@ -16,8 +16,11 @@ nav {
 
 .hero {
     display: flex;
-    background-color: #02431d;
-    /* background-image: url(./../images/bg-image.jpg); */
+    background-color: #94b959;
+    background-size: cover;
+    background-position: bottom;
+    height: 350px;
+    background-image: url('../images/hero-main.jpg');
 
 }
 
@@ -48,7 +51,8 @@ nav {
     width: 250px;
     height: 30px;
     margin-top: 8px;
-    background-color: #8dc641;
+    /* background-color: #8dc641; */
+    background-color: #94b959;
     color: white;
     border: none;
 }
@@ -56,6 +60,7 @@ nav {
 .benefits-container {
     display: flex;
     justify-content: center;
+    
 }
 
 .benefits-item {
@@ -69,7 +74,7 @@ nav {
 }
 
 .benefits-container i{
-    size:30px;
+    size:35px;
 }
 
 .testimonials-container {
@@ -111,15 +116,20 @@ nav {
     text-align: center;
 }
 
-.fas {
+.ratings .fas {
     font-size: 11px;
     color: darkgoldenrod;
+}
+
+.fa-heart {
+    color: red;
 }
 
 .ratings {
     margin: auto;
 }
 
+/* FOOTER SECTION */
 footer{
     background: #565a5c;
     color:white;
@@ -133,6 +143,7 @@ footer{
     .hero {
       flex-direction: column;
       align-items: center;
+      height: inherit;
     }
 
     .benefits-container {
